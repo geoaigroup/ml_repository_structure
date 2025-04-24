@@ -27,9 +27,13 @@ project-root/
 │   ├── train.py          # Main training script
 │   └── eval.py           # Main evaluation script
 │
-├── experiments/          # Experiment results
+├── experiments/           # Experiment results (non-Python)
 │   ├── experiment_1/
+│   │   ├── logs/
+│   │   └── checkpoints/
 │   └── experiment_2/
+│       ├── logs/
+│       └── checkpoints//
 │
 ├── scripts/              # Helper scripts (.sh/.bash)
 ├── tests/                # Test cases
