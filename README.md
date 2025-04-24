@@ -6,6 +6,10 @@ This document outlines the standardized structure for all project repositories t
 ## Repository Structure
 ```text
 project-root/
+├── media/                # Static assets (non-Python)
+│   ├── image1.png        # Documentation/images
+│   └── image2.jpg        # Screenshots/visuals
+│
 ├── data/                  # Datasets (non-Python)
 │   ├── raw/              # Original, immutable data
 │   ├── processed/        # Cleaned and transformed data
@@ -36,23 +40,42 @@ project-root/
 └── README.md             # Project documentation
 ```
 
-## Key Folders :key:
+## Key Files & Folders :key:
+(<kbd>Required</kbd> = Must exist from Day 1, even if empty)
+### Core Structure
+- **`media/`**: Contains images displayed in documentation
+  - `image1.png`, `image2.jpg` - Supplementary figures/visuals
 
-- **`data/`** (Must Have): Stores all datasets
-  - `raw/`: Immutable original data
-  - `processed/`: Cleaned data
-  - `external/`: Third-party data
-  
-- **`notebooks/`** (Must Have): Jupyter notebooks for exploration/demos
+- **`data/`** <kbd>Required</kbd>: Datasets storage
+  - `raw/`: Original immutable data
+  - `processed/`: Cleaned/transformed data  
+  - `external/`: Third-party sources
 
-- **`src/`** (Must Have): Core Python code
+- **`notebooks/`** <kbd>Required</kbd>: Jupyter notebooks
+  - Exploration, prototyping, and demos
+
+- **`src/`** <kbd>Required</kbd>: Main Python package
   - Submodules: `data/`, `models/`, `evaluation/`, etc.
 
-- **`experiments/`** (Must Have): Saves training logs and model checkpoints
+- **`experiments/`** <kbd>Required</kbd>: Training artifacts
+  - `experiment_1/`: Logs and checkpoints
+  - `experiment_2/`: Alternative configurations
 
-- **`tests/`**: Unit/integration tests
+### Supporting Files
+- **`requirements.txt`** <kbd>Essential</kbd>: Python dependencies  
+  ```pip install -r requirements.txt```
+
+- **`Dockerfile`** <kbd>Recommended</kbd>: Container configuration  
+  ```docker build -t project-name .```
+
+- **`README.md`** <kbd>Critical</kbd>: Project documentation  
+  - Setup instructions, usage examples, and citations
+
+### Additional Directories
+- **`scripts/`**: Automation scripts (.sh/.bash)
+- **`tests/`**: Pytest/unittest cases
 - **`config/`**: YAML/JSON configuration files
-- **`scripts/`**: Automation scripts
+
 
 ## Python Module Requirements :snake:
 
