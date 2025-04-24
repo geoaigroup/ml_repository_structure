@@ -1,3 +1,5 @@
+<!-- Define once -->
+<span id="required-tag" style="display: inline-block; color: white; background-color: #0366d6; padding: 2px 6px; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; font-size: 0.9em; font-weight: 500;">Required</span>
 
 # Project Repository Structure :file_folder:
 
@@ -50,26 +52,27 @@ project-root/
 - **`media/`**: Contains images displayed in documentation
   - `image1.png`, `image2.jpg` - Supplementary figures/visuals
 
-- **`data/`** <kbd>Required</kbd>: Datasets storage
+- **`data/`**: Datasets storage <span id="required-tag"></span>
   - `raw/`: Original immutable data
   - `processed/`: Cleaned/transformed data  
   - `external/`: Third-party sources
 
-- **`notebooks/`** <kbd>Required</kbd>: Jupyter notebooks
+- **`notebooks/`**: Jupyter notebooks <span id="required-tag"></span>
   - Exploration, prototyping, and demos
 
-- **`src/`** <kbd>Required</kbd>: Main Python package
+- **`src/`**: Main Python package <span id="required-tag"></span>
   - Submodules: `data/`, `models/`, `evaluation/`, etc.
 
-- **`experiments/`** <kbd>Required</kbd>: Training artifacts
+- **`experiments/`**: Training artifacts <span id="required-tag"></span>
   - `experiment_1/`: Logs and checkpoints
   - `experiment_2/`: Alternative configurations
-
+- **`config/`**: YAML/JSON configuration files <span id="required-tag"></span>
+  
 ### Supporting Files
-- **`requirements.txt`** <kbd>Essential</kbd>: Python dependencies  
+- **`requirements.txt`**: Python dependencies  
   ```pip install -r requirements.txt```
 
-- **`Dockerfile`** <kbd>Recommended</kbd>: Container configuration  
+- **`Dockerfile`**: Container configuration  
   ```docker build -t project-name .```
 
 - **`README.md`** <kbd>Critical</kbd>: Project documentation  
@@ -78,7 +81,7 @@ project-root/
 ### Additional Directories
 - **`scripts/`**: Automation scripts (.sh/.bash)
 - **`tests/`**: Pytest/unittest cases
-- **`config/`**: YAML/JSON configuration files
+
 
 
 ## Python Module Requirements :snake:
