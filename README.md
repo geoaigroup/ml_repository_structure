@@ -42,40 +42,39 @@ project-root/
 ├── .gitignore            # Git exclusion rules
 └── README.md             # Project documentation
 ```
-
 ## Key Files & Folders :key:
-(<kbd>Required</kbd> = Must exist from Day 1, even if empty)
+
+<kbd>Required</kbd> = Must exist from Day 1 (can be empty initially)
+
 ### Core Structure
-```text
-- **`media/`**: Contains images displayed in documentation
-  - `image1.png`, `image2.jpg` - Supplementary figures/visuals
-- **`data/`** <kbd>Required</kbd> : Datasets storage 
-  - `raw/`: Original immutable data
-  - `processed/`: Cleaned/transformed data  
-  - `external/`: Third-party sources
-- **`notebooks/`** <kbd>Required</kbd>: Jupyter notebooks 
-  - Exploration, prototyping, and demos
-- **`src/`** <kbd>Required</kbd>: Main Python package 
-  - Submodules: `data/`, `models/`, `evaluation/`, etc.
-- **`experiments/`** <kbd>Required</kbd>: Training artifacts 
-  - `experiment_1/`: Logs and checkpoints
-  - `experiment_2/`: Alternative configurations
-- **`config/`** <kbd>Required</kbd>: YAML/JSON configuration files 
-```  
-### Supporting Files
-```text
-- **`requirements.txt`**: Python dependencies  
-  ```pip install -r requirements.txt```
-- **`Dockerfile`**: Container configuration  
-  ```docker build -t project-name .```
-- **`README.md`** <kbd>Critical</kbd>: Project documentation  
-  - Setup instructions, usage examples, and citations
-```
-### Additional Directories
-```text
-- **`scripts/`**: Automation scripts (.sh/.bash)
-- **`tests/`**: Pytest/unittest cases
-```
+
+| Folder/File          | Status       | Contents Description                          |
+|----------------------|--------------|-----------------------------------------------|
+| **`media/`**         | Recommended  | Documentation images (`*.png`, `*.jpg`)       |
+| **`data/`**          | <kbd>Required</kbd> | Datasets storage:                             |
+| ├── `raw/`           |              | Original, immutable data                      |
+| ├── `processed/`     |              | Cleaned/transformed versions                  |
+| └── `external/`      |              | Third-party datasets                          |
+| **`notebooks/`**     | <kbd>Required</kbd> | Jupyter notebooks for exploration & demos     |
+| **`src/`**           | <kbd>Required</kbd> | Main Python package with modules:             |
+| ├── `data/`          |              | Data processing scripts                       |
+| ├── `models/`        |              | Model architectures                           |
+| └── `evaluation/`    |              | Metrics and analysis                          |
+| **`experiments/`**   | <kbd>Required</kbd> | Training runs (logs/checkpoints)              |
+| **`config/`**        | <kbd>Required</kbd> | Configuration files (`*.yaml`, `*.json`)      |
+
+### Essential Files
+
+| File                 | Command/Usage                          |
+|----------------------|----------------------------------------|
+| **`requirements.txt`** | `pip install -r requirements.txt`      |
+| **`Dockerfile`**       | `docker build -t project-name .`       |
+| **`README.md`**        | Project documentation hub              |
+
+### Supplementary Folders
+
+- **`scripts/`**: Shell scripts for automation
+- **`tests/`**: Unit and integration tests (`test_*.py`)
 
 
 ## Python Module Requirements :snake:
