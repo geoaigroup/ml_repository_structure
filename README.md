@@ -48,18 +48,18 @@ project-root/
 ### Core Structure
 - **`media/`**: Contains images displayed in documentation
   - `image1.png`, `image2.jpg` - Supplementary figures/visuals
-- **`data/`**: Datasets storage <kbd>Required</kbd>
+- **`data/`** <kbd>Required</kbd> : Datasets storage 
   - `raw/`: Original immutable data
   - `processed/`: Cleaned/transformed data  
   - `external/`: Third-party sources
-- **`notebooks/`**: Jupyter notebooks <kbd>Required</kbd>
+- **`notebooks/`** <kbd>Required</kbd>: Jupyter notebooks 
   - Exploration, prototyping, and demos
-- **`src/`**: Main Python package <kbd>Required</kbd>
+- **`src/`** <kbd>Required</kbd>: Main Python package 
   - Submodules: `data/`, `models/`, `evaluation/`, etc.
-- **`experiments/`**: Training artifacts <kbd>Required</kbd>
+- **`experiments/`** <kbd>Required</kbd>: Training artifacts 
   - `experiment_1/`: Logs and checkpoints
   - `experiment_2/`: Alternative configurations
-- **`config/`**: YAML/JSON configuration files <kbd>Required</kbd>
+- **`config/`** <kbd>Required</kbd>: YAML/JSON configuration files 
   
 ### Supporting Files
 - **`requirements.txt`**: Python dependencies  
