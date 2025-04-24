@@ -50,7 +50,7 @@ project-root/
 
 | Folder/File          | Status       | Contents Description                          |
 |----------------------|--------------|-----------------------------------------------|
-| **`media/`**         | Recommended  | Documentation images (`*.png`, `*.jpg`)       |
+| **`media/`**         | <kbd>Recommended</kbd> | Documentation images (`*.png`, `*.jpg`)       |
 | **`data/`**          | <kbd>Required</kbd> | Datasets storage:                             |
 | **`notebooks/`**     | <kbd>Required</kbd> | Jupyter notebooks for exploration & demos     |
 | **`src/`**           | <kbd>Required</kbd> | Main Python package with modules:             |
@@ -66,9 +66,10 @@ project-root/
 | **`README.md`**        | Project documentation hub              |
 
 ### Supplementary Folders
-
-- **`scripts/`**: Shell scripts for automation
-- **`tests/`**: Unit and integration tests (`test_*.py`)
+| File                 | Command/Usage                          |
+|----------------------|----------------------------------------|
+| **`scripts/`**| Shell scripts for automation|
+| **`tests/`**| Unit and integration tests (`test_*.py`)|
 
 
 ## Python Module Requirements :snake:
