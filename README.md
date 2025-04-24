@@ -46,6 +46,7 @@ project-root/
 ## Key Files & Folders :key:
 (<kbd>Required</kbd> = Must exist from Day 1, even if empty)
 ### Core Structure
+```text
 - **`media/`**: Contains images displayed in documentation
   - `image1.png`, `image2.jpg` - Supplementary figures/visuals
 - **`data/`** <kbd>Required</kbd> : Datasets storage 
@@ -60,19 +61,21 @@ project-root/
   - `experiment_1/`: Logs and checkpoints
   - `experiment_2/`: Alternative configurations
 - **`config/`** <kbd>Required</kbd>: YAML/JSON configuration files 
-  
+```  
 ### Supporting Files
+```text
 - **`requirements.txt`**: Python dependencies  
   ```pip install -r requirements.txt```
 - **`Dockerfile`**: Container configuration  
   ```docker build -t project-name .```
 - **`README.md`** <kbd>Critical</kbd>: Project documentation  
   - Setup instructions, usage examples, and citations
-
+```
 ### Additional Directories
+```text
 - **`scripts/`**: Automation scripts (.sh/.bash)
 - **`tests/`**: Pytest/unittest cases
-
+```
 
 
 ## Python Module Requirements :snake:
