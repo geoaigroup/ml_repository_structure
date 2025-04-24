@@ -1,11 +1,10 @@
-```markdown
+
 # Project Repository Structure :file_folder:
 
 This document outlines the standardized structure for all project repositories to ensure consistency and ease of collaboration.
 
 ## Repository Structure
 
-```
 project-root/
 ├── data/                  # Datasets (non-Python)
 │   ├── raw/               # Original, immutable data
@@ -35,7 +34,7 @@ project-root/
 ├── Dockerfile             # Environment setup
 ├── .gitignore            # Git exclusion rules
 └── README.md              # Project documentation
-```
+
 
 ## Key Folders :key:
 
