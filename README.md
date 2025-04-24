@@ -113,7 +113,6 @@ src/
    ```
    data/, notebooks/, src/, experiments/
    ```
-2. Other folders (`scripts/`, `config/`) can be added later
+2. Other folders (`scripts/`, `tests/`) can be added later
 3. Maintain identical structure across all repositories
 4. Update `.gitignore` to exclude large data files/credentials
-```
