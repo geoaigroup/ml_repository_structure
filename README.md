@@ -4,37 +4,37 @@
 This document outlines the standardized structure for all project repositories to ensure consistency and ease of collaboration.
 
 ## Repository Structure
-'''markdown
+```text
 project-root/
 ├── data/                  # Datasets (non-Python)
-│   ├── raw/               # Original, immutable data
-│   ├── processed/         # Cleaned and transformed data
-│   └── external/          # Third-party data
+│   ├── raw/              # Original, immutable data
+│   ├── processed/        # Cleaned and transformed data
+│   └── external/         # Third-party data
 │
-├── notebooks/             # Jupyter notebooks (non-Python)
+├── notebooks/            # Jupyter notebooks (non-Python)
 │
-├── src/                   # Source code (Python package)
+├── src/                  # Source code (Python package)
 │   ├── __init__.py       
-│   ├── data/              # Data processing
-│   ├── models/            # Model code
-│   ├── evaluation/        # Evaluation logic
-│   ├── visualization/     # Visualization tools
-│   ├── utils/             # Utilities
-│   ├── train.py           # Main training script
-│   └── eval.py            # Main evaluation script
+│   ├── data/             # Data processing
+│   ├── models/           # Model code
+│   ├── evaluation/       # Evaluation logic
+│   ├── visualization/    # Visualization tools
+│   ├── utils/            # Utilities
+│   ├── train.py          # Main training script
+│   └── eval.py           # Main evaluation script
 │
-├── experiments/           # Experiment results
+├── experiments/          # Experiment results
 │   ├── experiment_1/
 │   └── experiment_2/
 │
-├── scripts/               # Helper scripts (.sh/.bash)
-├── tests/                 # Test cases
-├── config/                # Configuration files
-├── requirements.txt       # Python dependencies
-├── Dockerfile             # Environment setup
+├── scripts/              # Helper scripts (.sh/.bash)
+├── tests/                # Test cases
+├── config/               # Configuration files
+├── requirements.txt      # Python dependencies
+├── Dockerfile            # Environment setup
 ├── .gitignore            # Git exclusion rules
-└── README.md              # Project documentation
-'''
+└── README.md             # Project documentation
+```
 
 ## Key Folders :key:
 
