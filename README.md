@@ -57,7 +57,7 @@ project-root/
 ## Python Module Requirements :snake:
 
 All subfolders under `src/` must be proper Python modules:
-```python
+```text
 src/
 ├── __init__.py          # Required for root package
 └── data/
