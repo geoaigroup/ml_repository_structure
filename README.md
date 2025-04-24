@@ -1,5 +1,5 @@
 <!-- Define once -->
-<span id="required-tag" style="display: inline-block; color: white; background-color: #0366d6; padding: 2px 6px; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; font-size: 0.9em; font-weight: 500;">Required</span>
+<span id="required-tag" style="display: inline-block; color: yellow; background-color: #0366d6; padding: 2px 6px; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; font-size: 0.9em; font-weight: 500;">Required</span>
 
 # Project Repository Structure :file_folder:
 
