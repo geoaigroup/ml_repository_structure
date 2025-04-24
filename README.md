@@ -1,5 +1,6 @@
-<!-- Define once -->
-<span id="required-tag" style="display: inline-block; color: yellow; background-color: #0366d6; padding: 2px 6px; border-radius: 4px; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif; font-size: 0.9em; font-weight: 500;">Required</span>
+<!-- ========== TAG DEFINITIONS (TOP OF README) ========== -->
+<span id="req-tag" style="display: inline-block; background: #0366d6; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500;">Required</span>
+<span id="opt-tag" style="display: inline-block; background: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500;">Optional</span>
 
 # Project Repository Structure :file_folder:
 
@@ -52,21 +53,21 @@ project-root/
 - **`media/`**: Contains images displayed in documentation
   - `image1.png`, `image2.jpg` - Supplementary figures/visuals
 
-- **`data/`**: Datasets storage <span id="required-tag"></span>
+- **`data/`**: Datasets storage <span id="req-tag"></span>
   - `raw/`: Original immutable data
   - `processed/`: Cleaned/transformed data  
   - `external/`: Third-party sources
 
-- **`notebooks/`**: Jupyter notebooks <span id="required-tag"></span>
+- **`notebooks/`**: Jupyter notebooks <span id="req-tag"></span>
   - Exploration, prototyping, and demos
 
-- **`src/`**: Main Python package <span id="required-tag"></span>
+- **`src/`**: Main Python package <span id="req-tag"></span>
   - Submodules: `data/`, `models/`, `evaluation/`, etc.
 
-- **`experiments/`**: Training artifacts <span id="required-tag"></span>
+- **`experiments/`**: Training artifacts <span id="req-tag"></span>
   - `experiment_1/`: Logs and checkpoints
   - `experiment_2/`: Alternative configurations
-- **`config/`**: YAML/JSON configuration files <span id="required-tag"></span>
+- **`config/`**: YAML/JSON configuration files <span id="req-tag"></span>
   
 ### Supporting Files
 - **`requirements.txt`**: Python dependencies  
