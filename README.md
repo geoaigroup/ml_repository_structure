@@ -1,7 +1,3 @@
-<!-- ========== TAG DEFINITIONS (TOP OF README) ========== -->
-<span id="req-tag" style="display: inline-block; background: #0366d6; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500;">Required</span>
-<span id="opt-tag" style="display: inline-block; background: #28a745; color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.8em; font-weight: 500;">Optional</span>
-
 # Project Repository Structure :file_folder:
 
 This document outlines the standardized structure for all project repositories to ensure consistency and ease of collaboration.
@@ -52,30 +48,24 @@ project-root/
 ### Core Structure
 - **`media/`**: Contains images displayed in documentation
   - `image1.png`, `image2.jpg` - Supplementary figures/visuals
-
-- **`data/`**: Datasets storage <span id="req-tag"></span>
+- **`data/`**: Datasets storage <kbd>Required</kbd>
   - `raw/`: Original immutable data
   - `processed/`: Cleaned/transformed data  
   - `external/`: Third-party sources
-
-- **`notebooks/`**: Jupyter notebooks <span id="req-tag"></span>
+- **`notebooks/`**: Jupyter notebooks <kbd>Required</kbd>
   - Exploration, prototyping, and demos
-
-- **`src/`**: Main Python package <span id="req-tag"></span>
+- **`src/`**: Main Python package <kbd>Required</kbd>
   - Submodules: `data/`, `models/`, `evaluation/`, etc.
-
-- **`experiments/`**: Training artifacts <span id="req-tag"></span>
+- **`experiments/`**: Training artifacts <kbd>Required</kbd>
   - `experiment_1/`: Logs and checkpoints
   - `experiment_2/`: Alternative configurations
-- **`config/`**: YAML/JSON configuration files <span id="req-tag"></span>
+- **`config/`**: YAML/JSON configuration files <kbd>Required</kbd>
   
 ### Supporting Files
 - **`requirements.txt`**: Python dependencies  
   ```pip install -r requirements.txt```
-
 - **`Dockerfile`**: Container configuration  
   ```docker build -t project-name .```
-
 - **`README.md`** <kbd>Critical</kbd>: Project documentation  
   - Setup instructions, usage examples, and citations
 
