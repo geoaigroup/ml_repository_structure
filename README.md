@@ -52,14 +52,8 @@ project-root/
 |----------------------|--------------|-----------------------------------------------|
 | **`media/`**         | Recommended  | Documentation images (`*.png`, `*.jpg`)       |
 | **`data/`**          | <kbd>Required</kbd> | Datasets storage:                             |
-| ├── `raw/`           |              | Original, immutable data                      |
-| ├── `processed/`     |              | Cleaned/transformed versions                  |
-| └── `external/`      |              | Third-party datasets                          |
 | **`notebooks/`**     | <kbd>Required</kbd> | Jupyter notebooks for exploration & demos     |
 | **`src/`**           | <kbd>Required</kbd> | Main Python package with modules:             |
-| ├── `data/`          |              | Data processing scripts                       |
-| ├── `models/`        |              | Model architectures                           |
-| └── `evaluation/`    |              | Metrics and analysis                          |
 | **`experiments/`**   | <kbd>Required</kbd> | Training runs (logs/checkpoints)              |
 | **`config/`**        | <kbd>Required</kbd> | Configuration files (`*.yaml`, `*.json`)      |
 
